@@ -1,23 +1,19 @@
+/*
+ * @Author: jonty
+ * @Date: 2022-02-15 20:00:38
+ * @LastEditTime: 2022-02-15 21:05:23
+ * @Description: 
+ * @Reference: 
+ * @FilePath: \in100days\src\App.js
+ */
 import logo from './logo.svg';
 import './App.css';
+import { ILayout } from './pages/iLayout'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ILayout />
     </div>
   );
 }
