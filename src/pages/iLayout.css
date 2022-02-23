@@ -12,12 +12,14 @@
 }
 
 .avatar {
+    /* float: right; */
     position: absolute;
     right: 20px;
     top: 2px;
 }
 
 .avatarName {
+    
     color: #fafafa;
     margin-left: 10px;
 
