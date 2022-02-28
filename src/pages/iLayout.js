@@ -1,7 +1,7 @@
 /*
  * @Author: jonty
  * @Date: 2022-02-15 20:17:55
- * @LastEditTime: 2022-02-24 22:34:44
+ * @LastEditTime: 2022-02-28 21:59:34
  * @Description: 
  * @Reference: 
  * @FilePath: \in100days\src\pages\iLayout.js
@@ -83,7 +83,7 @@ export function ILayout(props) {
                 </Sider>
 
                 {/* 内容块区域 */}
-                <Layout style={{ padding: '0 24px 24px' }}>
+                <Layout style={{ padding: '0 12px 12px' }}>
                     <Breadcrumb style={{ margin: '16px 0' }}>
                         <Breadcrumb.Item>Home</Breadcrumb.Item>
                         <Breadcrumb.Item>List</Breadcrumb.Item>
@@ -93,7 +93,7 @@ export function ILayout(props) {
                     <Content
                         className="site-layout-background"
                         style={{
-                            padding: 24,
+                            padding: 12,
                             margin: 0,
                             height: '80vh', // 改初始高度（vh视图高度）
                         }}

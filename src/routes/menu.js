@@ -1,7 +1,7 @@
 /*
  * @Author: jonty
  * @Date: 2022-02-23 22:11:34
- * @LastEditTime: 2022-02-24 23:12:56
+ * @LastEditTime: 2022-02-28 21:58:45
  * @Description: 
  * @Reference: 
  * @FilePath: \in100days\src\routes\menu.js
@@ -19,15 +19,15 @@ export const menu = [
         element: <ILayout />,
         children: [
             {
+                title: '发票菜单',
+                path: 'invoice',
+                element: <Invoice />
+            },
+            {
                 path: 'product',
                 element: <Product />,
                 title: '菜单一',
                 // index: true, // <Route index element={<Product />}>
-            },
-            {
-                title: '发票菜单',
-                path: 'invoice',
-                element: <Invoice />
             },
             {
                 title: 'NotFound',

@@ -1,11 +1,15 @@
 <!--
  * @Author: jonty
  * @Date: 2022-02-15 20:00:38
- * @LastEditTime: 2022-02-16 22:20:12
+ * @LastEditTime: 2022-02-28 22:31:40
  * @Description: 
  * @Reference: 
  * @FilePath: \in100days\README.md
 -->
+# 百日挑战
+
+# 使用的技术和框架：React + Antd
+
 # 创建
 
 现在换成 npx 了
@@ -38,3 +42,20 @@
 ```sh
 npm install react-router-dom@6
 ```
+
+
+#### 使用less
+
+1.安装 less 依赖
+2.将 .less 文件转 .css 的命令
+```sh
+npx less ./src/routes/index.less > index.css
+```
+
+> 将一个 .less 文件转成 .css 文件
+
+`less-loader` 自动加载所有的 .less 并转换成 .css
+
+#### webpack
+
+作用：打包静态资源的    
