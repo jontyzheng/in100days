@@ -1,7 +1,7 @@
 /*
  * @Author: jonty
  * @Date: 2022-02-15 20:17:55
- * @LastEditTime: 2022-02-28 21:59:34
+ * @LastEditTime: 2022-03-18 00:46:19
  * @Description: 
  * @Reference: 
  * @FilePath: \in100days\src\pages\iLayout.js
@@ -18,7 +18,7 @@ const { Header, Content, Sider } = Layout;
 
 export function ILayout(props) {
 
-    console.log(menu);
+    // console.log(menu);
 
     const subMenu = menu[0].children
 

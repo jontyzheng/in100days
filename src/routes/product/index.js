@@ -1,16 +1,16 @@
 /*
  * @Author: jonty
  * @Date: 2022-02-16 22:36:50
- * @LastEditTime: 2022-02-28 23:23:04
+ * @LastEditTime: 2022-03-17 23:51:02
  * @Description: 
  * @Reference: 
- * @FilePath: \in100days\src\routes\product.js
+ * @FilePath: \in100days\src\routes\product\index.js
  */
 import React from 'react'
 import { PieChartTwoTone } from '@ant-design/icons'
 // import './index.css'
 
-export function Product() {
+export  function Product() {
 
     const itemArray = [
         {
@@ -60,7 +60,7 @@ export function Product() {
             <div className='contentBox' style={{
                 background: 'white',
                 borderRadius: '16px',
-                width: '100%',
+                // width: '100%',
                 // height: '100vh'
             }}>
                 <div className='cardBox' style={{
@@ -69,7 +69,7 @@ export function Product() {
                 }}>
                     {
                         itemArray.map(item => (
-                            <div className='cardItem' style={{
+                            <div className='cardItem' key={item.path} style={{
                                 width: '200px',
                                 height: '200px',
                                 // border: '1px red solid',
