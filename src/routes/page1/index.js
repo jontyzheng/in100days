@@ -1,14 +1,15 @@
 /*
  * @Author: jonty
  * @Date: 2022-03-07 23:32:55
- * @LastEditTime: 2022-03-18 00:08:11
+ * @LastEditTime: 2022-03-20 00:21:55
  * @Description: 切页
  * @Reference: 
  * @FilePath: \in100days\src\routes\page1\index.js
  */
-import { Table, Button } from 'antd'
+import { Table, Button, Modal } from 'antd'
 import { React, useState, useEffect } from 'react'
 import { doQuery } from './service'
+import AddModal from './components/addModal'
 
 export function Page1() {
 
@@ -17,6 +18,8 @@ export function Page1() {
     'name': '商品名称',
     'price': 2
   }])
+
+  const [addVisible, setAddVisible] = useState(false)
 
   var param = {
     pageNum: 1,
@@ -40,6 +43,10 @@ export function Page1() {
     ).catch(
       err => alert(err)
     )
+  }
+
+  function showAddModal() {
+    setAddVisible(!addVisible)
   }
 
   const arr = [
@@ -83,8 +90,16 @@ export function Page1() {
     <div>
 
       <div className='btnBox'>
-        <Button type='primary'>新增</Button>
+        <Button type='primary' onClick={showAddModal}>新增</Button>
       </div>
+
+      <Modal
+        visible={addVisible}
+        // onOk={onAddSubmi}
+        onCancel={showAddModal}
+      >
+        <AddModal />
+      </Modal>
 
       <div className='contentBox'>
         <Table
