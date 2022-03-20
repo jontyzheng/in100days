@@ -1,7 +1,7 @@
 /*
  * @Author: jonty
  * @Date: 2022-03-20 00:04:51
- * @LastEditTime: 2022-03-20 00:21:21
+ * @LastEditTime: 2022-03-20 23:12:56
  * @Description: 
  * @Reference: 
  * @FilePath: \in100days\src\routes\page1\components\addModal.js
@@ -11,9 +11,13 @@ import { Form, InputNumber, Input, Row, message } from 'antd'
 import { doCreateOrUpdate } from '../service'
 const FormItem = Form.Item
 
-export default function AddModal() {
+export default function AddModal(props) {
 
+
+    const { onAddSubmit } = props
+    
     const [form] = Form.useForm()
+
 
     const onFinish = (fieldsValue) => {
         console.log(fieldsValue);

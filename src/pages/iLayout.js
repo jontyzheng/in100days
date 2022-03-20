@@ -1,7 +1,7 @@
 /*
  * @Author: jonty
  * @Date: 2022-02-15 20:17:55
- * @LastEditTime: 2022-03-18 00:46:19
+ * @LastEditTime: 2022-03-20 22:36:39
  * @Description: 
  * @Reference: 
  * @FilePath: \in100days\src\pages\iLayout.js
@@ -29,7 +29,7 @@ export function ILayout(props) {
     };
 
     const onSubMenuClick = (path) => {
-        console.log(path);
+        // console.log(path);
         navigate(path)
     }
 
