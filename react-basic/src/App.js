@@ -1,11 +1,13 @@
 /*
  * @Author: jonty
  * @Date: 2022-03-21 00:15:04
- * @LastEditTime: 2022-03-21 23:05:48
+ * @LastEditTime: 2022-03-22 23:30:06
  * @Description: 
  * @Reference: 
  * @FilePath: \react-basic\src\App.js
  */
+// css导入
+import './app.css'
 
 const name = 'this is a name'
 // 同级方法
@@ -25,6 +27,22 @@ const list = [
     'value': 2
   },
 ]
+const flag = true
+// 返回元素
+function getHeader(flag) {
+  if (flag) {
+    return <h1>h1标签</h1>
+  } else {
+    return <h2>h2标签</h2>
+  }
+}
+// 样式对象
+const styles = {
+  color: 'blue',
+  fontSize: '40px'
+}
+
+
 
 function App() {
   return (
@@ -38,12 +56,19 @@ function App() {
       {
         list.map(item => {
           return (
-            <li>
+            <li key={item.name}>
               {item.name}
             </li>
           )
         })
       }
+      {flag ? '真棒！' : '真菜！'}
+      {
+        getHeader()
+      }
+      {/* 外层表表达式内层表对象 */}
+      <div style={styles}>文字样式测试</div>
+      <div className='app'>css样式测试</div>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 <!--
  * @Author: jonty
  * @Date: 2022-03-21 00:15:04
- * @LastEditTime: 2022-03-21 23:13:15
+ * @LastEditTime: 2022-03-22 23:34:19
  * @Description: 
  * @Reference: 
  * @FilePath: \react-basic\README.md
@@ -23,4 +23,11 @@
 另外，还看到了一下 js 文件里一个个"函数、变量"的声明。原来一个方法和一个变量一样，都是同级元素的。没有谁高谁低，谁主谁次，一个个 js 文件同一级，可以声明多个方法或者变量，变量就用 const 方法就用 fucntion，它们都可以任意互相调用。
 
 【教程】[React入门到实战(全网最新react+hook+mobx+antD）](https://www.bilibili.com/video/BV1Z44y1K7Fj?p=7)
+
+#### 2022年3月22日
+今天看到一个新东西——为什么在 react 中(jsx)中引用文件样式要用 {{}} 双层括号。原来是因为外面的括号表表达式/变量，里面的括号表示一个对象。
+
+难怪 style={{corlor: 'red', fontSize: '20px'}} 里面是用"逗号"隔开的，也难怪公司里的文件经常用 styles.xxx 的方法从一个叫做 less 类型的文件里引入格式。难怪。。
+
+【教材】[React入门到实战(全网最新react+hook+mobx+antD）](https://www.bilibili.com/video/BV1Z44y1K7Fj?p=11)
 
