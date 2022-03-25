@@ -1,7 +1,7 @@
 /*
  * @Author: jonty
  * @Date: 2022-03-07 23:32:55
- * @LastEditTime: 2022-03-20 23:32:00
+ * @LastEditTime: 2022-03-24 23:02:45
  * @Description: 切页
  * @Reference: 
  * @FilePath: \in100days\src\routes\page1\index.js
@@ -78,6 +78,15 @@ export function Page1() {
         <Button type='primary' onClick={showAddModal}>新增</Button>
       </div>
 
+      <Modal
+        visible={addVisible}
+        // onOk={onAddSubmi}
+        onCancel={showAddModal}
+        title={"新增商品"}
+      >
+        <AddModal onAddSubmit={onAddSubmit} />
+      </Modal>
+      
       <Modal
         visible={addVisible}
         // onOk={onAddSubmi}

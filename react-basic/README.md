@@ -1,7 +1,7 @@
 <!--
  * @Author: jonty
  * @Date: 2022-03-21 00:15:04
- * @LastEditTime: 2022-03-22 23:34:19
+ * @LastEditTime: 2022-03-25 22:17:41
  * @Description: 
  * @Reference: 
  * @FilePath: \react-basic\README.md
@@ -31,3 +31,8 @@
 
 【教材】[React入门到实战(全网最新react+hook+mobx+antD）](https://www.bilibili.com/video/BV1Z44y1K7Fj?p=11)
 
+#### 2022年3月25日
+今天学了一个番茄的时间。学的不多，一个动态样式的显示而已。一个 css 文件写好两个样式(不同的类样式) 在前端根据条件赋值不同的类名就可以显示不同的
+样式，可以用在各种提示下。
+
+【教程】[React入门到实战(全网最新react+hook+mobx+antD）](https://www.bilibili.com/video/BV1Z44y1K7Fj?p=12)

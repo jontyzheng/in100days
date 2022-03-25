@@ -3,3 +3,13 @@
     color: antiquewhite;
     font-weight: bold;
 }
+
+.pass {
+    color: greenyellow;
+    font-weight: bold;
+}
+
+.failed {
+    color: #ccc;
+    font-weight: bold;
+}

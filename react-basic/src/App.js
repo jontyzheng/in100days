@@ -1,7 +1,7 @@
 /*
  * @Author: jonty
  * @Date: 2022-03-21 00:15:04
- * @LastEditTime: 2022-03-22 23:30:06
+ * @LastEditTime: 2022-03-25 22:14:55
  * @Description: 
  * @Reference: 
  * @FilePath: \react-basic\src\App.js
@@ -41,7 +41,7 @@ const styles = {
   color: 'blue',
   fontSize: '40px'
 }
-
+const passFlag = true
 
 
 function App() {
@@ -66,9 +66,10 @@ function App() {
       {
         getHeader()
       }
-      {/* 外层表表达式内层表对象 */}
+      {/* 外层{}表表达式 内层{}表对象 */}
       <div style={styles}>文字样式测试</div>
       <div className='app'>css样式测试</div>
+      提示：<span className={passFlag ? 'pass' : 'fail'}>动态类名演示</span>
     </div>
   );
 }
