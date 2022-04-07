@@ -1,7 +1,7 @@
 <!--
  * @Author: jonty
  * @Date: 2022-03-21 00:15:04
- * @LastEditTime: 2022-03-25 22:17:41
+ * @LastEditTime: 2022-04-07 15:11:49
  * @Description: 
  * @Reference: 
  * @FilePath: \react-basic\README.md
@@ -36,3 +36,7 @@
 样式，可以用在各种提示下。
 
 【教程】[React入门到实战(全网最新react+hook+mobx+antD）](https://www.bilibili.com/video/BV1Z44y1K7Fj?p=12)
+
+#### 2022年4月7日
+
+npm 指定端口：`port=3003 cnpm start`

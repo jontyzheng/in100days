@@ -1,0 +1,54 @@
+.comment-title {
+    font-size: 20px;
+}
+
+.comment-number {
+    font-size: 14px;
+}
+
+.tab {
+    font-weight: bold;
+    display: inline-block;
+    margin: auto 10px;
+}
+
+.selected-tab {
+    text-decoration: underline;
+    color: #00aeec;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* 头像的“圆型框”=圆形框线 */
+    margin-right: 5px;
+}
+
+.textarea-align {
+    float: left;
+}
+
+.comment-button {
+    height: 50px;
+    background-color: #00aeec;
+    color: white;
+    border: #00aeec;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.emoji-button {
+    size: 10em;
+    margin-left: 50px;
+}
+
+.like-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.align {
+    margin-left: 20px;
+}
